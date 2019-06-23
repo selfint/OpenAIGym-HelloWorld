@@ -2,7 +2,8 @@
 Simple Q-Learning implementation with OpenAi Gym
 
 # Installation
-Download Python 3.7: https://www.python.org/downloads/
+#### Download Python 3.7
+https://www.python.org/downloads/
 
 #### Install modules
 
