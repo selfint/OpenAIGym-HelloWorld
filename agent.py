@@ -24,7 +24,6 @@ class Agent:
             action = np.argmax(self.q_table[state, :])
 
         # decay epsilon value (set minimum threshold to min epsilon value)
-        # exploration_rate = min_exploration_rate + (max_exploration_rate - min_exploration_rate) * np.exp(-exploration_decay_rate*episode)
         if episode is not None:
             self.epsilon = self.min_epsilon_value + (1.0 - self.min_epsilon_value) * np.exp(-self.epsilon_decay_rate * episode)
         return action
